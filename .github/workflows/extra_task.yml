@@ -20,6 +20,8 @@ jobs:
    - name: List all files
      run: ls -la
      
-   
+   - name: Print log file
+     run: cat file5.txt
+     
 
  
