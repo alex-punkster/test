@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
      fday:
-        type: choise
+        type: choice
         description: what is your favorite day?
         options: 
         - monday
