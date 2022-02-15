@@ -1,7 +1,7 @@
 name: My-extra-task
 
 env:
- DEPLOY_VER: "deploy-version-${{  github.sha  }}"
+ DEPLOY_VER: "deploy-version-${{github.sha}}"
  YEAR: 2022
 
 on:
@@ -23,5 +23,5 @@ jobs:
    - name: Print log file
      run: cat file5.txt
      
-
- 
+   - name: Print deploy version variable
+     run: echo "Hello from ${{env.DEPLOY_VER}}"
