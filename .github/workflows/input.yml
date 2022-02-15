@@ -1,4 +1,4 @@
-name: Mixed inputs
+name: favorite day
 
 on:
   workflow_dispatch:
@@ -8,13 +8,11 @@ on:
         description: what is your favorite day?
         options: 
         - monday
-        - tuesday
-
-     
+        - tuesday   
 jobs:
-  greet:
+  favorite-day:
     runs-on: ubuntu-latest
-
     steps:
     - name: favorite day of week
       run: echo "${{ github.event.inputs.fday }} 
+      
