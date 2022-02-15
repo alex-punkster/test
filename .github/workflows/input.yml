@@ -8,7 +8,12 @@ on:
         description: what is your favorite day?
         options: 
         - monday
-        - tuesday   
+        - tuesday
+        - wednesday
+        - thursday
+        - friday
+        - saturday
+        - sunday
 jobs:
   favorite-day:
     runs-on: ubuntu-latest
