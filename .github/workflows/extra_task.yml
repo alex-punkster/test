@@ -1,0 +1,19 @@
+name: My-extra-task
+
+env:
+ DEPLOY_VER: "deploy-version-${{  github.sha  }}"
+ YEAR: 2022
+
+on:
+ push:
+  branches:
+   - master
+   
+jobs:
+ extra-task1:
+  runs-on: ubuntu-latest
+
+  steps:
+  -name: First_step
+   run: Echo "Hello world"
+ 
