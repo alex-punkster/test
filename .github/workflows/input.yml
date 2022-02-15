@@ -3,7 +3,7 @@ name: Mixed inputs
 on:
   workflow_dispatch:
     inputs:
-      What is your favorite day of week:
+      What-is-your-favorite-day-of-week:
         required: true
      
 jobs:
@@ -12,4 +12,4 @@ jobs:
 
     steps:
     - name: favorite day of week
-      run: echo "${{ github.event.inputs.What is your favorite day of week }} 
+      run: echo "${{ github.event.inputs.What-is-your-favorite-day-of-week }} 
